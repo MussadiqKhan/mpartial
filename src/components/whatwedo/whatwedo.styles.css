@@ -1,0 +1,53 @@
+.container {
+  margin: 0 auto;
+  max-width: 1100px;
+  width: 90%;
+}
+
+.what-we-do-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.title {
+  background-size: 200px 200px;
+  background-repeat: no-repeat;
+  background-image: url(../../static/images/download.png);
+  text-align: left;
+  padding-top: 10%;
+  padding-left: 8%;
+  background-position: 0 16px;
+}
+.title h1 {
+  font-weight: 500;
+  font-style: bold;
+  max-width: 400px;
+  font-size: 45px;
+  line-height: 58px;
+  letter-spacing: 0;
+  color: #000;
+  opacity: 1;
+  text-align: left;
+}
+.sub-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 34px;
+  letter-spacing: -0.19px;
+  color: #000;
+  opacity: 1;
+  padding-top: 10%;
+  max-width: 530px;
+}
+.image-comparison {
+  padding: 50px 50px 0px;
+  height: auto;
+}
+.image-comparison > div > div {
+  height: 80% !important;
+}
+.try-now-btn {
+  padding: 0 0 60px;
+  text-align: center;
+}
