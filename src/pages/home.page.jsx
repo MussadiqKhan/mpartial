@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "../components/hero/hero.component";
+import HowWeDo from "../components/howwedo/how-we-do.component";
 import WhatWeDo from "../components/whatwedo/whatwedo.component";
 
 const HomePage = () => {
@@ -7,6 +8,7 @@ const HomePage = () => {
     <div>
       <Hero />
       <WhatWeDo />
+      <HowWeDo />
     </div>
   );
 };

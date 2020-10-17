@@ -51,3 +51,9 @@
   padding: 0 0 60px;
   text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+  .image-comparison {
+    padding: 50px 0;
+  }
+}
