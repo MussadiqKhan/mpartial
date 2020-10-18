@@ -32,7 +32,7 @@ const Contact = () => {
                       onChange={onChange}
                       required
                     />
-                    <label for="name">First Name</label>
+                    <label htmlFor="name">First Name</label>
                   </div>
                   <div className="form-field">
                     <input
@@ -43,7 +43,7 @@ const Contact = () => {
                       value={fields.email}
                       required
                     />
-                    <label for="email">Email</label>
+                    <label htmlFor="email">Email</label>
                   </div>
                   <div className="form-field">
                     <input
@@ -54,7 +54,7 @@ const Contact = () => {
                       value={fields.number}
                       required
                     />
-                    <label for="number">Cell</label>
+                    <label htmlFor="number">Cell</label>
                   </div>
                 </div>
                 <div className="textarea-field">
@@ -67,7 +67,7 @@ const Contact = () => {
                       value={fields.message}
                       required
                     />
-                    <label for="message">Message</label>
+                    <label htmlFor="message">Message</label>
                   </div>
                 </div>
               </div>
