@@ -63,7 +63,11 @@ input[type="submit"] {
   border: none;
   color: white;
 }
-
+.disabled {
+  border-color: #a6a6a6 !important;
+  background: #a6a6a6 !important;
+  cursor: not-allowed;
+}
 .form {
   display: flex;
   justify-content: space-between;

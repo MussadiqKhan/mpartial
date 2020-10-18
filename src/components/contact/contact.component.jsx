@@ -72,10 +72,19 @@ const Contact = () => {
                 </div>
               </div>
               <div className="form-button">
-                {fields ? (
+                {fields.name &&
+                fields.number &&
+                fields.message &&
+                fields.email !== "" ? (
                   <input type="submit" name="submit" value="Submit" />
                 ) : (
-                  <input type="submit" name="submit" value="Submit" disabled />
+                  <input
+                    className="disabled"
+                    type="submit"
+                    name="submit"
+                    value="Submit"
+                    disabled
+                  />
                 )}
               </div>
             </form>
