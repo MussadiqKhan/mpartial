@@ -36,7 +36,7 @@ const WhatWeDo = () => {
           />
           ;
         </div>
-        <div className="try-now-btn">
+        <div className="try-today-btn">
           <button>Try Now</button>
         </div>
       </div>

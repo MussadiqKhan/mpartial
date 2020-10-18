@@ -46,10 +46,7 @@
 .image-comparison > div > div {
   height: 80% !important;
 }
-.try-now-btn {
-  padding: 0 0 60px;
-  text-align: center;
-}
+
 @media screen and (max-width: 1024px) {
   .sub-title {
     max-width: 430px;

@@ -46,6 +46,23 @@
   font-size: 12px;
   padding: 20px 0 0 10px;
 }
+.try-today-btn {
+  padding: 0 0 60px;
+  text-align: center;
+}
+.try-today-btn button {
+  height: 40px;
+  width: 159px;
+  background: #3ac280 0 0 no-repeat padding-box;
+  border: 1px solid #3ac280;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0;
+  color: #fff;
+  opacity: 1;
+}
 
 @media screen and (max-width: 1024px) {
   .data-points {

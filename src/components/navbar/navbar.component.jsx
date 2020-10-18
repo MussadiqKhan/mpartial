@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import logo from "../../static/images/logo.png";
 import "./navbar.styles.css";
 
 const Navbar = () => {
@@ -10,10 +11,10 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar">
+      <div className="main-navbar">
         <div className="navbar-container">
           <a href="/" className="navbar-logo">
-            hello
+            <img src={logo} alt="logo" loading="lazy" />
           </a>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
@@ -56,7 +57,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-      </nav>
+      </div>
     </>
   );
 };
