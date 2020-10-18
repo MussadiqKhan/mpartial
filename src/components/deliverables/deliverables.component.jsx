@@ -5,6 +5,8 @@ import image1 from "../../static/images/image1.jpg";
 import image2 from "../../static/images/image2.jpg";
 import image3 from "../../static/images/image3.jpg";
 import image4 from "../../static/images/image4.jpg";
+import sketch1 from "../../static/images/sketch1.png";
+import sketch2 from "../../static/images/sketch2.png";
 
 const Deliverables = () => {
   return (
@@ -51,15 +53,37 @@ const Deliverables = () => {
                 <img className="d-block w-100" src={image2} alt="First slide" />
               </Carousel.Item>
               <Carousel.Item>
-                <img className="d-block w-100" src={image1} alt="Third slide" />
+                <img
+                  className="d-block w-100"
+                  src={image1}
+                  alt="Third slide"
+                  loading="lazy"
+                />
               </Carousel.Item>
               <Carousel.Item>
-                <img className="d-block w-100" src={image3} alt="Third slide" />
+                <img
+                  className="d-block w-100"
+                  src={image3}
+                  alt="Third slide"
+                  loading="lazy"
+                />
               </Carousel.Item>
               <Carousel.Item>
-                <img className="d-block w-100" src={image4} alt="Third slide" />
+                <img
+                  className="d-block w-100"
+                  src={image4}
+                  alt="Third slide"
+                  loading="lazy"
+                />
               </Carousel.Item>
             </Carousel>
+          </div>
+          <div className="true-sketch">
+            <h1>TrueSketch PLUS [SKX]</h1>
+            <div className="sketches">
+              <img src={sketch2} alt="sketch-1" loading="lazy" />
+              <img src={sketch1} alt="sketch-2" loading="lazy" />
+            </div>
           </div>
         </div>
       </div>
