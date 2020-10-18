@@ -24,11 +24,21 @@ video {
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16078);
   color: var(--white);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   video {
     height: 40vh;
   }
   .hero-container {
-    margin-top: -170px;
+    height: 40vh;
+  }
+  .hero-container {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container p {
+    font-size: 20px;
+    line-height: 25px;
   }
 }

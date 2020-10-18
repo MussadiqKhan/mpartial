@@ -94,4 +94,12 @@
   .sketches img:first-of-type {
     margin-bottom: 20px;
   }
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  .carousel-item img {
+    width: 100% !important;
+  }
 }

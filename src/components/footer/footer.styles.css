@@ -29,4 +29,7 @@ footer {
     justify-content: center;
     align-items: center;
   }
+  .footer-content p {
+    text-align: center;
+  }
 }
