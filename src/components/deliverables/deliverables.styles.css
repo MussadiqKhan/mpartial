@@ -9,10 +9,56 @@
   width: 90%;
   height: auto;
 }
-.deliverables-text h1 {
+.deliverables-text h1,
+.carousel h1 {
   font-size: 28px;
   padding-bottom: 25px;
   text-align: center;
+}
+.carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.carousel-item img {
+  width: 70% !important;
+  height: 80% !important;
+  margin: 0 auto !important;
+}
+.carousel-indicators {
+  padding-top: 40px !important;
+}
+.carousel-indicators li {
+  border-radius: 50% !important;
+  width: 11px !important;
+  height: 11px !important;
+  border-bottom: none !important;
+  border-top: none !important;
+  margin: 0px 6px 0px 6px !important;
+  background: #cbcbcb !important;
+}
+.carousel-indicators li.active {
+  background: var(--green) !important;
+}
+.slide {
+  padding: 15px 0 60px !important;
+}
+.carousel-control-next-icon {
+  background-image: url("../../static/images/next.png") !important;
+  width: 50px !important;
+  height: 50px !important;
+}
+.carousel-control-prev-icon {
+  background-image: url("../../static/images/prev.png") !important;
+  width: 50px !important;
+  height: 50px !important;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  opacity: 1 !important;
 }
 @media screen and (max-width: 768px) {
   .matterport {
