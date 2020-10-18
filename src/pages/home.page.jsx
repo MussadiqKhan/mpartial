@@ -1,4 +1,5 @@
 import React from "react";
+import Deliverables from "../components/deliverables/deliverables.component";
 import FeeStructure from "../components/feeStructure/feeStrucrure.component";
 import Hero from "../components/hero/hero.component";
 import HowWeDo from "../components/howwedo/how-we-do.component";
@@ -11,6 +12,7 @@ const HomePage = () => {
       <WhatWeDo />
       <HowWeDo />
       <FeeStructure />
+      <Deliverables />
     </div>
   );
 };

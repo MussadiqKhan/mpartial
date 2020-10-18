@@ -1,0 +1,27 @@
+.deliverables {
+  background: rgba(10, 81, 105, 0.05) 0 0 no-repeat;
+}
+.matterport {
+  display: flex;
+  justify-content: space-between;
+}
+.matterport div {
+  width: 90%;
+  height: auto;
+}
+.deliverables-text h1 {
+  font-size: 28px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .matterport {
+    flex-wrap: wrap;
+  }
+  .matterport div {
+    width: 100%;
+  }
+  .matterport iframe {
+    width: 100% !important;
+  }
+}
