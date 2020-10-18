@@ -1,3 +1,7 @@
+.contact-us {
+  padding-bottom: 40px;
+}
+
 .form-field {
   position: relative;
 }
@@ -62,6 +66,9 @@ input[type="submit"] {
   outline: none;
   border: none;
   color: white;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
 }
 .disabled {
   border-color: #a6a6a6 !important;

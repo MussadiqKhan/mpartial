@@ -1,0 +1,32 @@
+footer {
+  background: #0a5169;
+  padding: 20px 0;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-content p {
+  color: #fff;
+  opacity: 0.5;
+  font-size: 14px;
+  max-width: 500px;
+}
+.social ul {
+  display: flex;
+  list-style: none;
+}
+.social ul li {
+  margin: 0 15px;
+}
+.social ul li img {
+  width: auto;
+  height: 16px;
+}
+@media screen and (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

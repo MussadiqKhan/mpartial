@@ -35,6 +35,7 @@
   background: var(--white);
   padding: 20px;
   border-radius: 20px;
+  height: 440px;
   margin: 1px;
 }
 .carousel-item img {
@@ -83,5 +84,14 @@
   }
   .matterport iframe {
     width: 100% !important;
+  }
+  .sketches {
+    flex-direction: column;
+  }
+  .sketches img {
+    width: 100%;
+  }
+  .sketches img:first-of-type {
+    margin-bottom: 20px;
   }
 }
