@@ -1,11 +1,23 @@
 import React, { useState } from "react";
 import Slider from "react-rangeslider";
+import { Popover, OverlayTrigger } from "react-bootstrap";
+import { AiOutlineInfoCircle } from "react-icons/ai";
 import "./feeStructure.styles.css";
 
 const FeeStructure = () => {
   const [cost, setCost] = useState(0);
 
   const onChange = (value) => setCost(value);
+
+  const popover = (
+    <Popover id="popover-basic">
+      <Popover.Content>
+        Fee Structure Example: An estimate grand total of $100k will result in a
+        fee of $7,360. The $750 deposit will be collected upon submission and
+        applied toward the overarching fee.
+      </Popover.Content>
+    </Popover>
+  );
 
   return (
     <div>
@@ -36,8 +48,20 @@ const FeeStructure = () => {
             <p>
               Drag the slider around based on what you think it will cost to
               repair the property.
+              <br />
+              Move forward based on the estimated fee structure below.
             </p>
-            <p>Move forward based on the estimated fee structure below.</p>
+            <div className="slider-data">
+              <div className="data-value">
+                <label>${cost}</label>
+                <span>mpartial fee</span>
+              </div>
+
+              <OverlayTrigger trigger="click" placement="top" overlay={popover}>
+                <AiOutlineInfoCircle className="info-icon" variant="success" />
+              </OverlayTrigger>
+            </div>
+            [$750 minimum]
           </div>
         </div>
       </div>
