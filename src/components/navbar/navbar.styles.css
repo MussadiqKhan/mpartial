@@ -10,6 +10,14 @@
   z-index: 999;
 }
 
+.main-navbar.active {
+  background-color: white !important;
+  box-shadow: 0 1px 4px #bababa;
+}
+
+.main-navbar.active .nav-links {
+  color: #4a4848 !important;
+}
 .navbar-container {
   display: flex;
   justify-content: space-between;
@@ -35,6 +43,7 @@
 .nav-item button {
   background: #3ac280 0 0 no-repeat padding-box;
   border: 1px solid var(--green);
+  color: white;
   border-radius: 20px;
   height: 30px;
   padding: 5px 25px;

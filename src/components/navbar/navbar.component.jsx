@@ -4,14 +4,26 @@ import "./navbar.styles.css";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
+  const [navbar, setNavbar] = useState(false);
 
   const handleClick = () => setClick(!click);
 
   const closeMobileMenu = () => setClick(false);
 
+  const changeNavbar = () => {
+    if (window.scrollY >= 170) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+    console.log(navbar);
+  };
+
+  window.addEventListener("scroll", changeNavbar);
+
   return (
     <>
-      <div className="main-navbar">
+      <div className={navbar ? "main-navbar active" : "main-navbar"}>
         <div className="navbar-container">
           <a href="/" className="navbar-logo">
             <img src={logo} alt="logo" loading="lazy" />
