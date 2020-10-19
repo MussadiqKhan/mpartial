@@ -9,6 +9,16 @@ const FeeStructure = () => {
 
   const onChange = (value) => setCost(value);
 
+  const format = () => {
+    return (
+      <div>
+        {" "}
+        <div className="price">${cost}</div>
+        <div className="price-text">Estimated Price</div>
+      </div>
+    );
+  };
+
   const popover = (
     <Popover id="popover-basic">
       <Popover.Content>
@@ -28,7 +38,9 @@ const FeeStructure = () => {
           </div>
           <div className="slider">
             <Slider
+              format={format}
               min={0}
+              showTooltip={true}
               value={cost}
               max={1000000}
               onChange={onChange}
