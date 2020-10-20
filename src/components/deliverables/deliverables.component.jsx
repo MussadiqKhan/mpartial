@@ -1,4 +1,5 @@
 import React from "react";
+import Img from "react-cool-img";
 import "./deliverables.styles.css";
 import { Carousel } from "react-bootstrap";
 import image1 from "../../static/images/image1.jpg";
@@ -50,10 +51,24 @@ const Deliverables = () => {
             <h1>Immaculate. Impartial. [ESX]</h1>
             <Carousel>
               <Carousel.Item>
-                <img className="d-block w-100" src={image2} alt="First slide" />
+                <Img
+                  style={{
+                    backgroundColor: "white",
+                    width: "480",
+                    height: "320",
+                  }}
+                  className="d-block w-100"
+                  src={image2}
+                  alt="First slide"
+                />
               </Carousel.Item>
               <Carousel.Item>
-                <img
+                <Img
+                  style={{
+                    backgroundColor: "white",
+                    width: "480",
+                    height: "320",
+                  }}
                   className="d-block w-100"
                   src={image1}
                   alt="Third slide"
@@ -61,7 +76,12 @@ const Deliverables = () => {
                 />
               </Carousel.Item>
               <Carousel.Item>
-                <img
+                <Img
+                  style={{
+                    backgroundColor: "white",
+                    width: "480",
+                    height: "320",
+                  }}
                   className="d-block w-100"
                   src={image3}
                   alt="Third slide"
@@ -69,7 +89,12 @@ const Deliverables = () => {
                 />
               </Carousel.Item>
               <Carousel.Item>
-                <img
+                <Img
+                  style={{
+                    backgroundColor: "white",
+                    width: "480",
+                    height: "320",
+                  }}
                   className="d-block w-100"
                   src={image4}
                   alt="Third slide"
@@ -81,8 +106,26 @@ const Deliverables = () => {
           <div className="true-sketch">
             <h1>TrueSketch PLUS [SKX]</h1>
             <div className="sketches">
-              <img src={sketch2} alt="sketch-1" loading="lazy" />
-              <img src={sketch1} alt="sketch-2" loading="lazy" />
+              <Img
+                style={{
+                  backgroundColor: "white",
+                  width: "480",
+                  height: "320",
+                }}
+                src={sketch2}
+                alt="sketch-1"
+                loading="lazy"
+              />
+              <Img
+                style={{
+                  backgroundColor: "white",
+                  width: "480",
+                  height: "320",
+                }}
+                src={sketch1}
+                alt="sketch-2"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
