@@ -1,4 +1,5 @@
 import React from "react";
+import Img from "react-cool-img";
 import ReactCompareImage from "react-compare-image";
 import left from "../../static/images/postmitigation.jpg";
 import right from "../../static/images/premitigation.jpg";
@@ -30,7 +31,13 @@ const WhatWeDo = () => {
           <ReactCompareImage
             leftImage={left}
             rightImage={right}
-            handle={<img src={handler} alt="handler" />}
+            handle={
+              <Img
+                style={{ backgroundColor: "grey", width: "480", height: "320" }}
+                src={handler}
+                alt="handler"
+              />
+            }
             sliderLineColor="rgb(58, 194, 128)"
             sliderPositionPercentage="0.5"
           />

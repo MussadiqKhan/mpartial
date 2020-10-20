@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Slider from "react-rangeslider";
+import "react-rangeslider/lib/index.css";
 import { Popover, OverlayTrigger } from "react-bootstrap";
 import { AiOutlineInfoCircle } from "react-icons/ai";
 import "./feeStructure.styles.css";
